@@ -263,8 +263,6 @@
                                 <a class="dropdown-item" href="#"> Modification</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Legal Issues</a>
-
-
                             </div>
                         </li>
                         <li class="nav-item dropdown">
