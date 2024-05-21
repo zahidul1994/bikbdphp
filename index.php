@@ -2,14 +2,6 @@
 require "header.php"
 
 ?>
- 
- <style type=\"text/css\">
-p {color: white; }
-body {background-color: black; }
-#main-contant{
-    display: none;
-}
-</style>
 <!--find area-->
 <section id="find-area">
     <div class="container">
@@ -218,313 +210,95 @@ body {background-color: black; }
         </div>
     </div>
 </section>
-
-
 <!--    contant area-->
 <section id="main-contant" class="mt-4">
     <div class="container">
-        <div class="contant p-5 bg-dark">
-            <!-- First Ride Impression area-->
+        <div class="contant p-5 bg-white">
+            <!--               recent area-->
             <div class="recent-view">
-                <h3 class="mb-4 product-header text-center text-white" style="font-weight: 700;">
-                    First Ride Impressions
+                <h3 class="mb-4 product-header">
+                    Recently Viewed and Recommended
                 </h3>
-                <div class="row video-gallery-slider" >
+                <div class="row product-slider">
                     <div class="col-md-12">
-                        <div class="card p-2 bg-white" style="border: 1px solid #d1d1d1;border-radius: 0;">
-                            <a href="https://www.youtube.com/embed/YiSQ_db-Dcw?si=t-fWfhYcA9Myc2mW">
+                        <div class="card c-bdr">
+                            <a href="#">
                                 <img src="image/pulsar.webp" class="card-img-top w-100" alt="...">
                                 <div class="card-body pb-0">
-                                    <h5 class="video-gallery-bike-n text-dark" style="font-size: 16px;font-weight: 700;">Bajaj Pulsar 150</h5>
-                                    <p class="video-gallery-publish-date" style="color: #aeb3a9;font-size:15px;">05 September 2023</p>
-                                    <div class="d-inline-flex justify-content-between text-muted" style="font-size: 14px;">
-                                    <div class=""><i class="fas fa-eye" style="font-size:14px;"></i>&nbsp;Views: 35,288 &nbsp;</div>
-                                    <div class=""> <hr width="1" size="50" style="0 auto" /></div>
-                                   <div class=""> <i class="fas fa-thumbs-up" style="font-size:14px;"></i> Likes: 143</div>
-                                    </div>    
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card p-2 bg-white" style="border: 1px solid #d1d1d1;border-radius: 0;">
-                            <a href="https://www.youtube.com/embed/YiSQ_db-Dcw?si=t-fWfhYcA9Myc2mW">
-                                <img src="image/pulsar.webp" class="card-img-top w-100" alt="...">
-                                <div class="card-body pb-0">
-                                    <h5 class="video-gallery-bike-n text-dark" style="font-size: 16px;font-weight: 700;">Bajaj Pulsar 150</h5>
-                                    <p class="video-gallery-publish-date" style="color: #aeb3a9;font-size:15px;">05 September 2023</p>
-                                    <div class="d-inline-flex justify-content-between text-muted" style="font-size: 14px;">
-                                    <div class=""><i class="fas fa-eye" style="font-size:14px;"></i>&nbsp;Views: 35,288 &nbsp;</div>
-                                    <div class=""> <hr width="1" size="50" style="0 auto" /></div>
-                                    <div class=""> <i class="fas fa-thumbs-up" style="font-size:14px;"></i> Likes: 143</div>
-                                    </div>    
-                                </div>
-                               
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card p-2 bg-white" style="border: 1px solid #d1d1d1;border-radius: 0;">
-                            <a href="https://www.youtube.com/embed/YiSQ_db-Dcw?si=t-fWfhYcA9Myc2mW">
-                                <img src="image/pulsar.webp" class="card-img-top w-100" alt="...">
-                                <div class="card-body pb-0">
-                                    <h5 class="video-gallery-bike-n text-dark" style="font-size: 16px;font-weight: 700;">Bajaj Pulsar 150</h5>
-                                    <p class="video-gallery-publish-date" style="color: #aeb3a9;font-size:15px;">05 September 2023</p>
-                                    <div class="d-inline-flex justify-content-between text-muted" style="font-size: 14px;">
-                                    <div class=""><i class="fas fa-eye" style="font-size:14px;"></i>&nbsp;Views: 35,288 &nbsp;</div>
-                                    <div class=""> <hr width="1" size="50" style="0 auto" /></div>
-                                   <div class=""> <i class="fas fa-thumbs-up" style="font-size:14px;"></i> Likes: 143</div>
-                                    </div>    
-                                </div>
-                               
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card p-2 bg-white" style="border: 1px solid #d1d1d1;border-radius: 0;">
-                            <a href="https://www.youtube.com/embed/YiSQ_db-Dcw?si=t-fWfhYcA9Myc2mW">
-                                <img src="image/pulsar.webp" class="card-img-top w-100" alt="...">
-                                <div class="card-body pb-0">
-                                    <h5 class="video-gallery-bike-n text-dark" style="font-size: 16px;font-weight: 700;">Bajaj Pulsar 150</h5>
-                                    <p class="video-gallery-publish-date" style="color: #aeb3a9;font-size:15px;">05 September 2023</p>
-                                    <div class="d-inline-flex justify-content-between text-muted" style="font-size: 14px;">
-                                    <div class=""><i class="fas fa-eye" style="font-size:14px;"></i>&nbsp;Views: 35,288 &nbsp;</div>
-                                    <div class=""> <hr width="1" size="50" style="0 auto" /></div>
-                                   <div class=""> <i class="fas fa-thumbs-up" style="font-size:14px;"></i> Likes: 143</div>
-                                    </div>    
-                                </div>
-                               
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card p-2 bg-white" style="border: 1px solid #d1d1d1;border-radius: 0;">
-                            <a href="https://www.youtube.com/embed/YiSQ_db-Dcw?si=t-fWfhYcA9Myc2mW">
-                                <img src="image/pulsar.webp" class="card-img-top w-100" alt="...">
-                                <div class="card-body pb-0">
-                                    <h5 class="video-gallery-bike-n text-dark" style="font-size: 16px;font-weight: 700;">Bajaj Pulsar 150</h5>
-                                    <p class="video-gallery-publish-date" style="color: #aeb3a9;font-size:15px;">05 September 2023</p>
-                                    <div class="d-inline-flex justify-content-between text-muted" style="font-size: 14px;">
-                                    <div class=""><i class="fas fa-eye" style="font-size:14px;"></i>&nbsp;Views: 35,288 &nbsp;</div>
-                                    <div class=""> <hr width="1" size="50" style="0 auto" /></div>
-                                    <div class=""> <i class="fas fa-thumbs"></i> Likes: 143</div>
-                                    </div>    
-                                </div>
-                               
-                            </a>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="row">
-                        <div class="col-md-12 mt-5 d-flex justify-content-center">
-                        <div class="btn btn-outline-primary text-center" >
-                                    <span class="text-white" style="width: 200px;margin: 0 auto;">View More Videos</span>
-                                </div>
-                        </div>
-                    </div>
-            </div>
+                                    <h5 class="bike-n text-dark">Bajaj Pulsar 150</h5>
+                                    <p class="bike-p">Price:000000</p>
 
-             <!-- First Ride Impression area-->
-             <div class="recent-view mt-3">
-                <h3 class="mb-4 product-header text-center text-white" style="font-weight: 700;">
-                   Launch Alert
-                </h3>
-                <div class="row video-gallery-slider" >
-                    <div class="col-md-12">
-                        <div class="card p-2 bg-white" style="border: 1px solid #d1d1d1;border-radius: 0;">
-                            <a href="https://www.youtube.com/embed/YiSQ_db-Dcw?si=t-fWfhYcA9Myc2mW">
-                                <img src="image/pulsar.webp" class="card-img-top w-100" alt="...">
-                                <div class="card-body pb-0">
-                                    <h5 class="video-gallery-bike-n text-dark" style="font-size: 16px;font-weight: 700;">Bajaj Pulsar 150</h5>
-                                    <p class="video-gallery-publish-date" style="color: #aeb3a9;font-size:15px;">05 September 2023</p>
-                                    <div class="d-inline-flex justify-content-between text-muted" style="font-size: 14px;">
-                                    <div class=""><i class="fas fa-eye" style="font-size:14px;"></i>&nbsp;Views: 35,288 &nbsp;</div>
-                                    <div class=""> <hr width="1" size="50" style="0 auto" /></div>
-                                   <div class=""> <i class="fas fa-thumbs-up" style="font-size:14px;"></i> Likes: 143</div>
-                                    </div>    
+                                </div>
+                                <div class="c-bottom text-center">
+                                    <span class="">View Details</span>
                                 </div>
                             </a>
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <div class="card p-2 bg-white" style="border: 1px solid #d1d1d1;border-radius: 0;">
-                            <a href="https://www.youtube.com/embed/YiSQ_db-Dcw?si=t-fWfhYcA9Myc2mW">
+                        <div class="card c-bdr">
+                            <a href="#">
                                 <img src="image/pulsar.webp" class="card-img-top w-100" alt="...">
                                 <div class="card-body pb-0">
-                                    <h5 class="video-gallery-bike-n text-dark" style="font-size: 16px;font-weight: 700;">Bajaj Pulsar 150</h5>
-                                    <p class="video-gallery-publish-date" style="color: #aeb3a9;font-size:15px;">05 September 2023</p>
-                                    <div class="d-inline-flex justify-content-between text-muted" style="font-size: 14px;">
-                                    <div class=""><i class="fas fa-eye" style="font-size:14px;"></i>&nbsp;Views: 35,288 &nbsp;</div>
-                                    <div class=""> <hr width="1" size="50" style="0 auto" /></div>
-                                    <div class=""> <i class="fas fa-thumbs-up" style="font-size:14px;"></i> Likes: 143</div>
-                                    </div>    
-                                </div>
-                               
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card p-2 bg-white" style="border: 1px solid #d1d1d1;border-radius: 0;">
-                            <a href="https://www.youtube.com/embed/YiSQ_db-Dcw?si=t-fWfhYcA9Myc2mW">
-                                <img src="image/pulsar.webp" class="card-img-top w-100" alt="...">
-                                <div class="card-body pb-0">
-                                    <h5 class="video-gallery-bike-n text-dark" style="font-size: 16px;font-weight: 700;">Bajaj Pulsar 150</h5>
-                                    <p class="video-gallery-publish-date" style="color: #aeb3a9;font-size:15px;">05 September 2023</p>
-                                    <div class="d-inline-flex justify-content-between text-muted" style="font-size: 14px;">
-                                    <div class=""><i class="fas fa-eye" style="font-size:14px;"></i>&nbsp;Views: 35,288 &nbsp;</div>
-                                    <div class=""> <hr width="1" size="50" style="0 auto" /></div>
-                                   <div class=""> <i class="fas fa-thumbs-up" style="font-size:14px;"></i> Likes: 143</div>
-                                    </div>    
-                                </div>
-                               
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card p-2 bg-white" style="border: 1px solid #d1d1d1;border-radius: 0;">
-                            <a href="https://www.youtube.com/embed/YiSQ_db-Dcw?si=t-fWfhYcA9Myc2mW">
-                                <img src="image/pulsar.webp" class="card-img-top w-100" alt="...">
-                                <div class="card-body pb-0">
-                                    <h5 class="video-gallery-bike-n text-dark" style="font-size: 16px;font-weight: 700;">Bajaj Pulsar 150</h5>
-                                    <p class="video-gallery-publish-date" style="color: #aeb3a9;font-size:15px;">05 September 2023</p>
-                                    <div class="d-inline-flex justify-content-between text-muted" style="font-size: 14px;">
-                                    <div class=""><i class="fas fa-eye" style="font-size:14px;"></i>&nbsp;Views: 35,288 &nbsp;</div>
-                                    <div class=""> <hr width="1" size="50" style="0 auto" /></div>
-                                   <div class=""> <i class="fas fa-thumbs-up" style="font-size:14px;"></i> Likes: 143</div>
-                                    </div>    
-                                </div>
-                               
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card p-2 bg-white" style="border: 1px solid #d1d1d1;border-radius: 0;">
-                            <a href="https://www.youtube.com/embed/YiSQ_db-Dcw?si=t-fWfhYcA9Myc2mW">
-                                <img src="image/pulsar.webp" class="card-img-top w-100" alt="...">
-                                <div class="card-body pb-0">
-                                    <h5 class="video-gallery-bike-n text-dark" style="font-size: 16px;font-weight: 700;">Bajaj Pulsar 150</h5>
-                                    <p class="video-gallery-publish-date" style="color: #aeb3a9;font-size:15px;">05 September 2023</p>
-                                    <div class="d-inline-flex justify-content-between text-muted" style="font-size: 14px;">
-                                    <div class=""><i class="fas fa-eye" style="font-size:14px;"></i>&nbsp;Views: 35,288 &nbsp;</div>
-                                    <div class=""> <hr width="1" size="50" style="0 auto" /></div>
-                                    <div class=""> <i class="fas fa-thumbs"></i> Likes: 143</div>
-                                    </div>    
-                                </div>
-                               
-                            </a>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="row">
-                        <div class="col-md-12 mt-5 d-flex justify-content-center">
-                        <div class="btn btn-outline-primary text-center" >
-                                    <span class="text-white" style="width: 200px;margin: 0 auto;">View More Videos</span>
-                                </div>
-                        </div>
-                    </div>
-            </div>
+                                    <h5 class="bike-n text-dark">Bajaj Pulsar 150</h5>
+                                    <p class="bike-p">Price:000000</p>
 
-             <!-- First Look-->
-             <div class="recent-view mt-3">
-                <h3 class="mb-4 product-header text-center text-white" style="font-weight: 700;">
-                    First Look
-                </h3>
-                <div class="row video-gallery-slider" >
-                    <div class="col-md-12">
-                        <div class="card p-2 bg-white" style="border: 1px solid #d1d1d1;border-radius: 0;">
-                            <a href="https://www.youtube.com/embed/YiSQ_db-Dcw?si=t-fWfhYcA9Myc2mW">
-                                <img src="image/pulsar.webp" class="card-img-top w-100" alt="...">
-                                <div class="card-body pb-0">
-                                    <h5 class="video-gallery-bike-n text-dark" style="font-size: 16px;font-weight: 700;">Bajaj Pulsar 150</h5>
-                                    <p class="video-gallery-publish-date" style="color: #aeb3a9;font-size:15px;">05 September 2023</p>
-                                    <div class="d-inline-flex justify-content-between text-muted" style="font-size: 14px;">
-                                    <div class=""><i class="fas fa-eye" style="font-size:14px;"></i>&nbsp;Views: 35,288 &nbsp;</div>
-                                    <div class=""> <hr width="1" size="50" style="0 auto" /></div>
-                                   <div class=""> <i class="fas fa-thumbs-up" style="font-size:14px;"></i> Likes: 143</div>
-                                    </div>    
+                                </div>
+                                <div class="c-bottom text-center">
+                                    <span class="">View Details</span>
                                 </div>
                             </a>
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <div class="card p-2 bg-white" style="border: 1px solid #d1d1d1;border-radius: 0;">
-                            <a href="https://www.youtube.com/embed/YiSQ_db-Dcw?si=t-fWfhYcA9Myc2mW">
+                        <div class="card c-bdr">
+                            <a href="#">
                                 <img src="image/pulsar.webp" class="card-img-top w-100" alt="...">
                                 <div class="card-body pb-0">
-                                    <h5 class="video-gallery-bike-n text-dark" style="font-size: 16px;font-weight: 700;">Bajaj Pulsar 150</h5>
-                                    <p class="video-gallery-publish-date" style="color: #aeb3a9;font-size:15px;">05 September 2023</p>
-                                    <div class="d-inline-flex justify-content-between text-muted" style="font-size: 14px;">
-                                    <div class=""><i class="fas fa-eye" style="font-size:14px;"></i>&nbsp;Views: 35,288 &nbsp;</div>
-                                    <div class=""> <hr width="1" size="50" style="0 auto" /></div>
-                                    <div class=""> <i class="fas fa-thumbs-up" style="font-size:14px;"></i> Likes: 143</div>
-                                    </div>    
+                                    <h5 class="bike-n text-dark">Bajaj Pulsar 150</h5>
+                                    <p class="bike-p">Price:000000</p>
+
                                 </div>
-                               
+                                <div class="c-bottom text-center">
+                                    <span class="">View Details</span>
+                                </div>
                             </a>
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <div class="card p-2 bg-white" style="border: 1px solid #d1d1d1;border-radius: 0;">
-                            <a href="https://www.youtube.com/embed/YiSQ_db-Dcw?si=t-fWfhYcA9Myc2mW">
+                        <div class="card c-bdr">
+                            <a href="#">
                                 <img src="image/pulsar.webp" class="card-img-top w-100" alt="...">
                                 <div class="card-body pb-0">
-                                    <h5 class="video-gallery-bike-n text-dark" style="font-size: 16px;font-weight: 700;">Bajaj Pulsar 150</h5>
-                                    <p class="video-gallery-publish-date" style="color: #aeb3a9;font-size:15px;">05 September 2023</p>
-                                    <div class="d-inline-flex justify-content-between text-muted" style="font-size: 14px;">
-                                    <div class=""><i class="fas fa-eye" style="font-size:14px;"></i>&nbsp;Views: 35,288 &nbsp;</div>
-                                    <div class=""> <hr width="1" size="50" style="0 auto" /></div>
-                                   <div class=""> <i class="fas fa-thumbs-up" style="font-size:14px;"></i> Likes: 143</div>
-                                    </div>    
+                                    <h5 class="bike-n text-dark">Bajaj Pulsar 150</h5>
+                                    <p class="bike-p">Price:000000</p>
+
                                 </div>
-                               
+                                <div class="c-bottom text-center">
+                                    <span class="">View Details</span>
+                                </div>
                             </a>
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <div class="card p-2 bg-white" style="border: 1px solid #d1d1d1;border-radius: 0;">
-                            <a href="https://www.youtube.com/embed/YiSQ_db-Dcw?si=t-fWfhYcA9Myc2mW">
+                        <div class="card c-bdr">
+                            <a href="#">
                                 <img src="image/pulsar.webp" class="card-img-top w-100" alt="...">
                                 <div class="card-body pb-0">
-                                    <h5 class="video-gallery-bike-n text-dark" style="font-size: 16px;font-weight: 700;">Bajaj Pulsar 150</h5>
-                                    <p class="video-gallery-publish-date" style="color: #aeb3a9;font-size:15px;">05 September 2023</p>
-                                    <div class="d-inline-flex justify-content-between text-muted" style="font-size: 14px;">
-                                    <div class=""><i class="fas fa-eye" style="font-size:14px;"></i>&nbsp;Views: 35,288 &nbsp;</div>
-                                    <div class=""> <hr width="1" size="50" style="0 auto" /></div>
-                                   <div class=""> <i class="fas fa-thumbs-up" style="font-size:14px;"></i> Likes: 143</div>
-                                    </div>    
+                                    <h5 class="bike-n text-dark">Bajaj Pulsar 150</h5>
+                                    <p class="bike-p">Price:000000</p>
+
                                 </div>
-                               
+                                <div class="c-bottom text-center">
+                                    <span class="">View Details</span>
+                                </div>
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-12">
-                        <div class="card p-2 bg-white" style="border: 1px solid #d1d1d1;border-radius: 0;">
-                            <a href="https://www.youtube.com/embed/YiSQ_db-Dcw?si=t-fWfhYcA9Myc2mW">
-                                <img src="image/pulsar.webp" class="card-img-top w-100" alt="...">
-                                <div class="card-body pb-0">
-                                    <h5 class="video-gallery-bike-n text-dark" style="font-size: 16px;font-weight: 700;">Bajaj Pulsar 150</h5>
-                                    <p class="video-gallery-publish-date" style="color: #aeb3a9;font-size:15px;">05 September 2023</p>
-                                    <div class="d-inline-flex justify-content-between text-muted" style="font-size: 14px;">
-                                    <div class=""><i class="fas fa-eye" style="font-size:14px;"></i>&nbsp;Views: 35,288 &nbsp;</div>
-                                    <div class=""> <hr width="1" size="50" style="0 auto" /></div>
-                                    <div class=""> <i class="fas fa-thumbs"></i> Likes: 143</div>
-                                    </div>    
-                                </div>
-                               
-                            </a>
-                        </div>
-                    </div>
-                    
+
+
+
                 </div>
-                <div class="row">
-                        <div class="col-md-12 mt-5 d-flex justify-content-center">
-                        <div class="btn btn-outline-primary text-center" >
-                                    <span class="text-white" style="width: 200px;margin: 0 auto;">View More Videos</span>
-                                </div>
-                        </div>
-                    </div>
             </div>
 
 
@@ -536,7 +310,7 @@ body {background-color: black; }
                 </h3>
                 <div class="row product-slider">
                     <div class="col-md-12">
-                        <div class="card">
+                        <div class="card c-bdr">
                             <a href="#">
                                 <img src="image/pulsar.webp" class="card-img-top w-100" alt="...">
                                 <div class="card-body pb-0">

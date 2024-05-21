@@ -2,951 +2,711 @@
 require "header.php"
 
 ?>
-<!--find area-->
-<section id="find-area">
+
+<style>
+    .v-gallery-title p{
+        font-weight: 700;
+        color:#000;
+        font-size: 24px;
+    }
+    .view-more-btn{
+    padding: 7px 20px;
+    border: 1px solid #3799a7;
+    background: 0 0;
+    margin-top: 40px;
+    color: #3799a7;
+    transition: all .3s linear;
+    }
+    .view-more-btn:hover {
+    background-color:#3799a7;
+    text-decoration: none;
+    color: #fff;
+    
+}
+  hr.v-gallery-hr{
+    border: 1px solid #cdc5c5;margin:0.4rem;height:10px;
+  }
+  .brand-logo img{
+    width: 100%;
+    min-height: 50px;
+  }
+  .v-gallery-right{
+    border-bottom: 1px solid #e5dbdb;
+  }
+   .v-gallery-right a img{
+    width: 80px;
+    float: left;
+    margin-right: 6px;
+
+   }
+</style>
+
+
+<section id="single-product">
+
+
     <div class="container">
+   
+
+    <div class="product-contant mt-4 p-4" style="border: 1px solid #ddd">
         <div class="row">
-            <div class="col-md-8 col-lg-9">
-                <div class="filter-content p-3" style="background-color: #fff">
-                    <div class="row">
-                        <div class="col-md-7">
-
-                            <h3 class="filter-header">
-                                Let's Find a Bike For You!
-                            </h3>
-                            <p class="pt-5">
-                                By Price
-                            </p>
-                            <div id="slider-range"></div>
-
-                            <p class="pt-4 text-center">
-                                <!--                                <label for="amount">Price range:</label>-->
-                                <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
-                            </p>
-
-
-
-                            <div class="find-button text-center">
-                                <button>Find Bike</button>
-                            </div>
-
-
-
-
-                        </div>
-                        <div class="col-md-5">
-                            <div class="row by-product">
-                                <div class="col-md-6">
-                                    <p class="by-b-c"><strong>By Brand</strong></p>
-                                    <ul class="mb-0">
-                                        <li><a href="#">Honda</a></li>
-                                        <li><a href="#">Yamaha</a></li>
-                                        <li><a href="#">Bajaj</a></li>
-                                        <li><a href="#">Suzuki</a></li>
-                                        <li><a href="#">Runner</a></li>
-                                        <li><a href="#">TVS</a></li>
-                                        <li><a href="#">Roadmaster</a></li>
-                                        <li><a href="#">Vespa</a></li>
-
-
-                                    </ul>
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="by-b-c"><strong>By CC</strong></p>
-                                    <ul class="mb-0">
-                                        <li><a href="#">50</a></li>
-                                        <li><a href="#">80</a></li>
-                                        <li><a href="#">100</a></li>
-                                        <li><a href="#">110</a></li>
-                                        <li><a href="#">125</a></li>
-                                        <li><a href="#">135</a></li>
-                                        <li><a href="#">150</a></li>
-                                        <li><a href="#">160</a></li>
-
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-lg-3 align-self-center">
-                <div class="card" style="">
-                    <div class="card-slider">
-                        <div class="card-slide">
-                            <div class="c-head">
-                                <p class="mb-0 p-3">Sport Motorcycle</p>
-                            </div>
-                            <div class="c-body pb-4">
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <img src="image/pulsar.webp" alt="" class="w-100">
-                                    </div>
-                                    <div class="col-md-7">
-                                        <p class="mb-0 top-sd-cont">Bajaj Pulsar 150</p>
-                                        <p class="mb-0 top-sd-cont">Price: 172000</p>
-                                    </div>
-                                </div>
-                                <div class="row pt-3">
-                                    <div class="col-md-5">
-                                        <img src="image/pulsar.webp" alt="" class="w-100">
-                                    </div>
-                                    <div class="col-md-7">
-                                        <p class="mb-0 top-sd-cont">Bajaj Pulsar 150</p>
-                                        <p class="mb-0 top-sd-cont">Price: 172000</p>
-                                    </div>
-                                </div>
-                                <div class="row pt-3">
-                                    <div class="col-md-5">
-                                        <img src="image/pulsar.webp" alt="" class="w-100">
-                                    </div>
-                                    <div class="col-md-7">
-                                        <p class="mb-0 top-sd-cont">Bajaj Pulsar 150</p>
-                                        <p class="mb-0 top-sd-cont">Price: 172000</p>
-                                    </div>
-                                </div>
-                                <div class="row pt-3">
-                                    <div class="col-md-5">
-                                        <img src="image/pulsar.webp" alt="" class="w-100">
-                                    </div>
-                                    <div class="col-md-7">
-                                        <p class="mb-0 top-sd-cont">Bajaj Pulsar 150</p>
-                                        <p class="mb-0 top-sd-cont">Price: 172000</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-slide">
-                            <div class="c-head">
-                                <p class="mb-0 p-3">Standard Motorcycle</p>
-                            </div>
-                            <div class="c-body pb-4">
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <img src="image/pulsar.webp" alt="" class="w-100">
-                                    </div>
-                                    <div class="col-md-7">
-                                        <p class="mb-0 top-sd-cont">Bajaj Pulsar 150</p>
-                                        <p class="mb-0 top-sd-cont">Price: 172000</p>
-                                    </div>
-                                </div>
-                                <div class="row pt-3">
-                                    <div class="col-md-5">
-                                        <img src="image/pulsar.webp" alt="" class="w-100">
-                                    </div>
-                                    <div class="col-md-7">
-                                        <p class="mb-0 top-sd-cont">Bajaj Pulsar 150</p>
-                                        <p class="mb-0 top-sd-cont">Price: 172000</p>
-                                    </div>
-                                </div>
-                                <div class="row pt-3">
-                                    <div class="col-md-5">
-                                        <img src="image/pulsar.webp" alt="" class="w-100">
-                                    </div>
-                                    <div class="col-md-7">
-                                        <p class="mb-0 top-sd-cont">Bajaj Pulsar 150</p>
-                                        <p class="mb-0 top-sd-cont">Price: 172000</p>
-                                    </div>
-                                </div>
-                                <div class="row pt-3">
-                                    <div class="col-md-5">
-                                        <img src="image/pulsar.webp" alt="" class="w-100">
-                                    </div>
-                                    <div class="col-md-7">
-                                        <p class="mb-0 top-sd-cont">Bajaj Pulsar 150</p>
-                                        <p class="mb-0 top-sd-cont">Price: 172000</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-slide">
-                            <div class="c-head">
-                                <p class="mb-0 p-3">Naked Sport Motorcycle</p>
-                            </div>
-                            <div class="c-body pb-4">
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <img src="image/pulsar.webp" alt="" class="w-100">
-                                    </div>
-                                    <div class="col-md-7">
-                                        <p class="mb-0 top-sd-cont">Bajaj Pulsar 150</p>
-                                        <p class="mb-0 top-sd-cont">Price: 172000</p>
-                                    </div>
-                                </div>
-                                <div class="row pt-3">
-                                    <div class="col-md-5">
-                                        <img src="image/pulsar.webp" alt="" class="w-100">
-                                    </div>
-                                    <div class="col-md-7">
-                                        <p class="mb-0 top-sd-cont">Bajaj Pulsar 150</p>
-                                        <p class="mb-0 top-sd-cont">Price: 172000</p>
-                                    </div>
-                                </div>
-                                <div class="row pt-3">
-                                    <div class="col-md-5">
-                                        <img src="image/pulsar.webp" alt="" class="w-100">
-                                    </div>
-                                    <div class="col-md-7">
-                                        <p class="mb-0 top-sd-cont">Bajaj Pulsar 150</p>
-                                        <p class="mb-0 top-sd-cont">Price: 172000</p>
-                                    </div>
-                                </div>
-                                <div class="row pt-3">
-                                    <div class="col-md-5">
-                                        <img src="image/pulsar.webp" alt="" class="w-100">
-                                    </div>
-                                    <div class="col-md-7">
-                                        <p class="mb-0 top-sd-cont">Bajaj Pulsar 150</p>
-                                        <p class="mb-0 top-sd-cont">Price: 172000</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
+           <div class="col-md-12">
+                <h3>Bike Videos</h3>
             </div>
         </div>
     </div>
-</section>
-<!--    contant area-->
-<section id="main-contant" class="mt-4">
-    <div class="container">
-        <div class="contant p-5 bg-white">
-            <!--               recent area-->
-            <div class="recent-view">
-                <h3 class="mb-4 product-header">
-                    Recently Viewed and Recommended
-                </h3>
-                <div class="row product-slider">
-                    <div class="col-md-12">
-                        <div class="card c-bdr">
-                            <a href="#">
-                                <img src="image/pulsar.webp" class="card-img-top w-100" alt="...">
-                                <div class="card-body pb-0">
-                                    <h5 class="bike-n text-dark">Bajaj Pulsar 150</h5>
-                                    <p class="bike-p">Price:000000</p>
-
-                                </div>
-                                <div class="c-bottom text-center">
-                                    <span class="">View Details</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card c-bdr">
-                            <a href="#">
-                                <img src="image/pulsar.webp" class="card-img-top w-100" alt="...">
-                                <div class="card-body pb-0">
-                                    <h5 class="bike-n text-dark">Bajaj Pulsar 150</h5>
-                                    <p class="bike-p">Price:000000</p>
-
-                                </div>
-                                <div class="c-bottom text-center">
-                                    <span class="">View Details</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card c-bdr">
-                            <a href="#">
-                                <img src="image/pulsar.webp" class="card-img-top w-100" alt="...">
-                                <div class="card-body pb-0">
-                                    <h5 class="bike-n text-dark">Bajaj Pulsar 150</h5>
-                                    <p class="bike-p">Price:000000</p>
-
-                                </div>
-                                <div class="c-bottom text-center">
-                                    <span class="">View Details</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card c-bdr">
-                            <a href="#">
-                                <img src="image/pulsar.webp" class="card-img-top w-100" alt="...">
-                                <div class="card-body pb-0">
-                                    <h5 class="bike-n text-dark">Bajaj Pulsar 150</h5>
-                                    <p class="bike-p">Price:000000</p>
-
-                                </div>
-                                <div class="c-bottom text-center">
-                                    <span class="">View Details</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card c-bdr">
-                            <a href="#">
-                                <img src="image/pulsar.webp" class="card-img-top w-100" alt="...">
-                                <div class="card-body pb-0">
-                                    <h5 class="bike-n text-dark">Bajaj Pulsar 150</h5>
-                                    <p class="bike-p">Price:000000</p>
-
-                                </div>
-                                <div class="c-bottom text-center">
-                                    <span class="">View Details</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-
-
-                </div>
+    <div class="product-contant mt-3 px-4 py-3" style="border: 1px solid #ddd">
+        <div class="row">
+             <div class="col-md-12">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non nobis explicabo natus ea cumque officia id fugit est eligendi asperiores!</p>
             </div>
-
-
-            <!--                latest-news area-->
-
-            <div class="latest-news mt-5">
-                <h3 class="mb-4 product-header">
-                    Latest News
-                </h3>
-                <div class="row product-slider">
-                    <div class="col-md-12">
-                        <div class="card c-bdr">
-                            <a href="#">
-                                <img src="image/pulsar.webp" class="card-img-top w-100" alt="...">
-                                <div class="card-body pb-0">
-                                    <h5 class="bike-n text-dark text-left">Bajaj Pulsar 150</h5>
-                                    <p class="bike-p text-left text-black-50 font-weight-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, autem.</p>
-
-                                </div>
-
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card c-bdr">
-                            <a href="#">
-                                <img src="image/pulsar.webp" class="card-img-top w-100" alt="...">
-                                <div class="card-body pb-0">
-                                    <h5 class="bike-n text-dark text-left">Bajaj Pulsar 150</h5>
-                                    <p class="bike-p text-left text-black-50 font-weight-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, autem.</p>
-
-                                </div>
-
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card c-bdr">
-                            <a href="#">
-                                <img src="image/pulsar.webp" class="card-img-top w-100" alt="...">
-                                <div class="card-body pb-0">
-                                    <h5 class="bike-n text-dark text-left">Bajaj Pulsar 150</h5>
-                                    <p class="bike-p text-left text-black-50 font-weight-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, autem.</p>
-
-                                </div>
-
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card c-bdr">
-                            <a href="#">
-                                <img src="image/pulsar.webp" class="card-img-top w-100" alt="...">
-                                <div class="card-body pb-0">
-                                    <h5 class="bike-n text-dark text-left">Bajaj Pulsar 150</h5>
-                                    <p class="bike-p text-left text-black-50 font-weight-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, autem.</p>
-
-                                </div>
-
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card c-bdr">
-                            <a href="#">
-                                <img src="image/pulsar.webp" class="card-img-top w-100" alt="...">
-                                <div class="card-body pb-0">
-                                    <h5 class="bike-n text-dark text-left">Bajaj Pulsar 150</h5>
-                                    <p class="bike-p text-left text-black-50 font-weight-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, autem.</p>
-
-                                </div>
-
-                            </a>
-                        </div>
-                    </div>
-
-
-
-                </div>
-            </div>
-
-
-            <!--                upcoming area-->
-            <div class="row">
-                <div class="col-md-9">
-                    <div class="recent-view mt-5">
-                        <h3 class="mb-4 product-header">
-                            Upcoming Bikes
-                        </h3>
-                        <div class="row product-slider">
-                            <div class="col-md-12">
-                                <div class="card c-bdr">
-                                    <a href="#">
-                                        <img src="image/pulsar.webp" class="card-img-top w-100" alt="...">
-                                        <div class="card-body pb-0">
-                                            <h5 class="bike-n text-dark">Bajaj Pulsar 150</h5>
-                                            <p class="bike-p">Price:000000</p>
-
-                                        </div>
-                                        <div class="c-bottom text-center">
-                                            <span class="">View Details</span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="card c-bdr">
-                                    <a href="#">
-                                        <img src="image/pulsar.webp" class="card-img-top w-100" alt="...">
-                                        <div class="card-body pb-0">
-                                            <h5 class="bike-n text-dark">Bajaj Pulsar 150</h5>
-                                            <p class="bike-p">Price:000000</p>
-
-                                        </div>
-                                        <div class="c-bottom text-center">
-                                            <span class="">View Details</span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="card c-bdr">
-                                    <a href="#">
-                                        <img src="image/pulsar.webp" class="card-img-top w-100" alt="...">
-                                        <div class="card-body pb-0">
-                                            <h5 class="bike-n text-dark">Bajaj Pulsar 150</h5>
-                                            <p class="bike-p">Price:000000</p>
-
-                                        </div>
-                                        <div class="c-bottom text-center">
-                                            <span class="">View Details</span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="card c-bdr">
-                                    <a href="#">
-                                        <img src="image/pulsar.webp" class="card-img-top w-100" alt="...">
-                                        <div class="card-body pb-0">
-                                            <h5 class="bike-n text-dark">Bajaj Pulsar 150</h5>
-                                            <p class="bike-p">Price:000000</p>
-
-                                        </div>
-                                        <div class="c-bottom text-center">
-                                            <span class="">View Details</span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="card c-bdr">
-                                    <a href="#">
-                                        <img src="image/pulsar.webp" class="card-img-top w-100" alt="...">
-                                        <div class="card-body pb-0">
-                                            <h5 class="bike-n text-dark">Bajaj Pulsar 150</h5>
-                                            <p class="bike-p">Price:000000</p>
-
-                                        </div>
-                                        <div class="c-bottom text-center">
-                                            <span class="">View Details</span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-
-
-                        </div>
-                    </div>
-
-
-                    <!--                latest bike area-->
-                    <div class="recent-view mt-5">
-                        <h3 class="mb-4 product-header">
-                            Latest and Popular Bikes
-                        </h3>
-                        <div class="row product-slider">
-                            <div class="col-md-12">
-                                <div class="card c-bdr">
-                                    <a href="#">
-                                        <img src="image/pulsar.webp" class="card-img-top w-100" alt="...">
-                                        <div class="card-body pb-0">
-                                            <h5 class="bike-n text-dark">Bajaj Pulsar 150</h5>
-                                            <p class="bike-p">Price:000000</p>
-
-                                        </div>
-                                        <div class="c-bottom text-center">
-                                            <span class="">View Details</span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="card c-bdr">
-                                    <a href="#">
-                                        <img src="image/pulsar.webp" class="card-img-top w-100" alt="...">
-                                        <div class="card-body pb-0">
-                                            <h5 class="bike-n text-dark">Bajaj Pulsar 150</h5>
-                                            <p class="bike-p">Price:000000</p>
-
-                                        </div>
-                                        <div class="c-bottom text-center">
-                                            <span class="">View Details</span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="card c-bdr">
-                                    <a href="#">
-                                        <img src="image/pulsar.webp" class="card-img-top w-100" alt="...">
-                                        <div class="card-body pb-0">
-                                            <h5 class="bike-n text-dark">Bajaj Pulsar 150</h5>
-                                            <p class="bike-p">Price:000000</p>
-
-                                        </div>
-                                        <div class="c-bottom text-center">
-                                            <span class="">View Details</span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="card c-bdr">
-                                    <a href="#">
-                                        <img src="image/pulsar.webp" class="card-img-top w-100" alt="...">
-                                        <div class="card-body pb-0">
-                                            <h5 class="bike-n text-dark">Bajaj Pulsar 150</h5>
-                                            <p class="bike-p">Price:000000</p>
-
-                                        </div>
-                                        <div class="c-bottom text-center">
-                                            <span class="">View Details</span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="card c-bdr">
-                                    <a href="#">
-                                        <img src="image/pulsar.webp" class="card-img-top w-100" alt="...">
-                                        <div class="card-body pb-0">
-                                            <h5 class="bike-n text-dark">Bajaj Pulsar 150</h5>
-                                            <p class="bike-p">Price:000000</p>
-
-                                        </div>
-                                        <div class="c-bottom text-center">
-                                            <span class="">View Details</span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <h1>ad</h1>
-                </div>
-
-
-            </div>
-
-
-            <!--                brand area-->
-            <div class="recent-view mt-5">
-                <h3 class="mb-4 product-header">
-                    Featured Mobile Brands
-
-                </h3>
-                <div class="row product-slider">
-                    <div class="col-md-12">
-                        <div class="card c-bdr">
-                            <a href="#">
-                                <img src="image/brand-Logo.png" class="card-img-top w-100" alt="...">
-
-                                <div class="c-bottom text-center">
-                                    <span class="">View Details</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card c-bdr">
-                            <a href="#">
-                                <img src="image/brand-Logo.png" class="card-img-top w-100" alt="...">
-
-                                <div class="c-bottom text-center">
-                                    <span class="">View Details</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card c-bdr">
-                            <a href="#">
-                                <img src="image/brand-Logo.png" class="card-img-top w-100" alt="...">
-
-                                <div class="c-bottom text-center">
-                                    <span class="">View Details</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card c-bdr">
-                            <a href="#">
-                                <img src="image/brand-Logo.png" class="card-img-top w-100" alt="...">
-
-                                <div class="c-bottom text-center">
-                                    <span class="">View Details</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card c-bdr">
-                            <a href="#">
-                                <img src="image/brand-Logo.png" class="card-img-top w-100" alt="...">
-
-                                <div class="c-bottom text-center">
-                                    <span class="">View Details</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-
-
-                </div>
-            </div>
-
-
-
-            <!--                best price area-->
-            <div class="recent-view mt-5">
-                <h3 class="mb-4 product-header">
-                    Best Bike by Price
-
-                </h3>
-                <div class="row product-slider">
-                    <div class="col-md-12">
-                        <div class="card pt-3 pb-3 bg-secondary p-2">
-                            <div class="row">
-                                <div class="col-md-5 align-self-center pr-0">
-                                    <img src="image/bike-icon.png" alt="" class="w-100">
-                                </div>
-                                <div class="col-md-7 text-center align-self-center">
-                                    <p class="mb-0 text-white">
-                                        Best Bike Under
-                                    </p>
-                                    <p class="font-weight-bold text-white">
-                                        Tk 10000
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card pt-3 pb-3 bg-success p-2">
-                            <div class="row">
-                                <div class="col-md-5 align-self-center pr-0">
-                                    <img src="image/bike-icon.png" alt="" class="w-100">
-                                </div>
-                                <div class="col-md-7 text-center align-self-center">
-                                    <p class="mb-0 text-white">
-                                        Best Bike Under
-                                    </p>
-                                    <p class="font-weight-bold text-white">
-                                        Tk 10000
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card pt-3 pb-3 bg-danger p-2">
-                            <div class="row">
-                                <div class="col-md-5 align-self-center pr-0">
-                                    <img src="image/bike-icon.png" alt="" class="w-100">
-                                </div>
-                                <div class="col-md-7 text-center align-self-center">
-                                    <p class="mb-0 text-white">
-                                        Best Bike Under
-                                    </p>
-                                    <p class="font-weight-bold text-white">
-                                        Tk 10000
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card pt-3 pb-3 bg-warning p-2">
-                            <div class="row">
-                                <div class="col-md-5 align-self-center pr-0">
-                                    <img src="image/bike-icon.png" alt="" class="w-100">
-                                </div>
-                                <div class="col-md-7 text-center align-self-center">
-                                    <p class="mb-0 text-white">
-                                        Best Bike Under
-                                    </p>
-                                    <p class="font-weight-bold text-white">
-                                        Tk 10000
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card pt-3 pb-3 bg-warning p-2">
-                            <div class="row">
-                                <div class="col-md-5 align-self-center pr-0">
-                                    <img src="image/bike-icon.png" alt="" class="w-100">
-                                </div>
-                                <div class="col-md-7 text-center align-self-center">
-                                    <p class="mb-0 text-white">
-                                        Best Bike Under
-                                    </p>
-                                    <p class="font-weight-bold text-white">
-                                        Tk 10000
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-
-                </div>
-            </div>
-
-
-
-            <!--Trending Collections area-->
-
-            <div class="recent-view mt-5">
-                <h3 class="mb-4 product-header">
-                    Trending Collections
-
-                </h3>
-                <div class="row product-slider">
-                    <div class="col-md-12">
-                        <div class="card">
-                            <a href="#">
-                                <img src="image/newly_launched.jpg" class="card-img-top w-100" alt="...">
-
-                                <div class="pl-2">
-                                    <span class="text-dark">Newly Lounched</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card">
-                            <a href="#">
-                                <img src="image/newly_launched.jpg" class="card-img-top w-100" alt="...">
-
-                                <div class="pl-2">
-                                    <span class="text-dark">Powerful Headlight</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card">
-                            <a href="#">
-                                <img src="image/newly_launched.jpg" class="card-img-top w-100" alt="...">
-
-                                <div class="pl-2">
-                                    <span class="text-dark">Max Speed</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card">
-                            <a href="#">
-                                <img src="image/newly_launched.jpg" class="card-img-top w-100" alt="...">
-
-                                <div class="pl-2">
-                                    <span class="text-dark">Best Outlooking</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card">
-                            <a href="#">
-                                <img src="image/newly_launched.jpg" class="card-img-top w-100" alt="...">
-
-                                <div class="pl-2">
-                                    <span class="text-dark">Best Outlooking</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-
-            <!--                Comparisons area-->
-
-
-
-            <div class="recent-view mt-5">
-                <h3 class="mb-4 product-header">
-                    Comparisons
-
-                </h3>
-                <div class="row Comparison-slider">
-                    <div class="col-md-12">
-                        <div class="card p-5 cmpr">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="card">
-                                        <img src="image/pulsar.webp" alt="" class="w-100">
-                                        <p class="text-center">
-                                            Bajaj Pulsar 150 <br>
-                                            Brand: Bajaj <br>
-                                            Origin: india <br>
-                                        </p>
-
-                                    </div>
-                                </div>
-                                <div class="col-md-2 align-self-center">
-                                    <h3 class="text-center">
-                                        VS
-                                    </h3>
-                                </div>
-                                <div class="col-md-5">
-                                    <div class="card">
-                                        <img src="image/pulsar.webp" alt="" class="w-100">
-                                        <p class="text-center">
-                                            Bajaj Pulsar 150 <br>
-                                            Brand: Bajaj <br>
-                                            Origin: india <br>
-                                        </p>
-
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <button class="compare">
-                                Compare
-                            </button>
-
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card p-5 cmpr">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="card">
-                                        <img src="image/pulsar.webp" alt="" class="w-100">
-                                        <p class="text-center">
-                                            Bajaj Pulsar 150 <br>
-                                            Brand: Bajaj <br>
-                                            Origin: india <br>
-                                        </p>
-
-                                    </div>
-                                </div>
-                                <div class="col-md-2 align-self-center">
-                                    <h3 class="text-center">
-                                        VS
-                                    </h3>
-                                </div>
-                                <div class="col-md-5">
-                                    <div class="card">
-                                        <img src="image/pulsar.webp" alt="" class="w-100">
-                                        <p class="text-center">
-                                            Bajaj Pulsar 150 <br>
-                                            Brand: Bajaj <br>
-                                            Origin: india <br>
-                                        </p>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <button class="compare">
-                                Compare
-                            </button>
-
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card p-5 cmpr">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="card">
-                                        <img src="image/pulsar.webp" alt="" class="w-100">
-                                        <p class="text-center">
-                                            Bajaj Pulsar 150 <br>
-                                            Brand: Bajaj <br>
-                                            Origin: india <br>
-                                        </p>
-
-                                    </div>
-                                </div>
-                                <div class="col-md-2 align-self-center">
-                                    <h3 class="text-center">
-                                        VS
-                                    </h3>
-                                </div>
-                                <div class="col-md-5">
-                                    <div class="card">
-                                        <img src="image/pulsar.webp" alt="" class="w-100">
-                                        <p class="text-center">
-                                            Bajaj Pulsar 150 <br>
-                                            Brand: Bajaj <br>
-                                            Origin: india <br>
-                                        </p>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <button class="compare">
-                                Compare
-                            </button>
-
-                        </div>
-                    </div>
-
-
-
-
-
-                </div>
-            </div>
-
-
-
-
-
         </div>
     </div>
+
+    <!-- video gallery area start -->
+    <div class="product-contant mt-4 " style="border: 1px solid #ddd">
+        <div class="row">
+           <div class="col-md-12">
+               <div class="card">
+                    <div class="row p-3">
+                        <div class="col-md-8">
+                        <div class="v-gallery-left">
+                            <a href="https://www.youtube.com/embed/2f1YA0k-5zU"frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+                             <img src="image/bexp1.jpg" class="card-img-top" alt="...">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="v-gallery-right pb-4">
+                            <a href="https://www.youtube.com/embed/2f1YA0k-5zU">
+                             <img src="image/bexp1.jpg" class="card-img-top" alt="...">
+                            </a>
+                             <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="v-gallery-right mt-3 pb-4">
+                            <a href="https://www.youtube.com/embed/2f1YA0k-5zU">
+                             <img src="image/bexp1.jpg" class="card-img-top" alt="...">
+                            </a>
+                             <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="v-gallery-right mt-3 pb-4">
+                            <a href="https://www.youtube.com/embed/2f1YA0k-5zU">
+                             <img src="image/bexp1.jpg" class="card-img-top" alt="...">
+                            </a>
+                             <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="v-gallery-right mt-3 pb-4">
+                            <a href="https://www.youtube.com/embed/2f1YA0k-5zU">
+                             <img src="image/bexp1.jpg" class="card-img-top" alt="...">
+                            </a>
+                             <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="v-gallery-right mt-3 pb-4">
+                            <a href="https://www.youtube.com/embed/2f1YA0k-5zU">
+                             <img src="image/bexp1.jpg" class="card-img-top" alt="...">
+                            </a>
+                             <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="v-gallery-right mt-3 pb-4">
+                            <a href="https://www.youtube.com/embed/2f1YA0k-5zU">
+                             <img src="image/bexp1.jpg" class="card-img-top" alt="...">
+                            </a>
+                             <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                    </div>
+               
+               </div>
+            </div>
+        </div>
+    </div>
+    <!-- video gallery area end -->
+    
+ <!--        First Ride  Start-->
+
+<div class="product-contant mt-4 pt-2 pb-4" style="border: 1px solid #ddd">
+
+<div class="v-gallery-title">
+    <p class="p-3 mb-0 text-center">
+       Expert Reviews
+    </p>
+</div>
+<div class="row p-1 mx-2">
+    <div class="col-md-6 col-sm-6 ">
+        <div class="card" style="border:none;">
+         <a href="https://www.youtube.com/embed/2f1YA0k-5zU" class="p-3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+        <img src="image/bexp1.jpg" class="card-img-top" alt="...">
+        </a>
+           
+            <div class="card-body">
+                <p style="font-size:20px; font-weight:700;">Yamaha R15M</p>
+                <p class="card-text" style="color:#616161">05 September 2023</p>
+                <p class="card-text" style="color:#616161">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, atque?</p>
+
+                <div class="d-flex justify-content-between text-muted" style="font-size: 14px;">
+                    <div><i class="fas fa-eye" style="font-size:14px;"></i>&nbsp;Views: 35,288 &nbsp;</div>
+                    <div> <hr class="v-gallery-hr" />&nbsp;&nbsp;&nbsp;</div>
+                    <div>&nbsp; <i class="fas fa-thumbs-up" style="font-size:14px;"></i> Likes: 143</div>
+                </div>    
+            </div>
+
+           
+        </div>
+    </div>
+
+    <div class="col-md-6 col-sm-6">
+        <div class="card" style="border:none;">
+             <a href="https://www.youtube.com/embed/2f1YA0k-5zU" class="p-3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+        <img src="image/bexp2.jpg" class="card-img-top" alt="...">
+        </a>
+            <div class="card-body">
+                <p style="font-size:20px; font-weight:700;">Yamaha R15M</p>
+                <p class="card-text" style="color:#616161">05 September 2023</p>
+                <p class="card-text" style="color:#616161">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, atque?</p>
+
+
+                <div class="d-flex justify-content-between text-muted" style="font-size: 14px;">
+                    <div class=""><i class="fas fa-eye" style="font-size:14px;"></i>&nbsp;Views: 35,288 &nbsp;</div>
+                   <div> <hr class="v-gallery-hr" />&nbsp;&nbsp;&nbsp;</div>
+                    <div class="">&nbsp; <i class="fas fa-thumbs-up" style="font-size:14px;"></i> Likes: 143</div>
+                </div>    
+            </div>
+
+           
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-md-12 mt-1 text-center">
+        <a href="" class="view-more-btn">
+            View more Videos <i class="fas">&#xf105;</i>
+        </a>
+    </div>
+</div>
+
+</div>
+<!--        First Ride  end-->
+
+
+
+
+
+
+ <!--        First Ride  Start-->
+
+<div class="product-contant mt-4 pt-2 pb-4" style="border: 1px solid #ddd">
+
+<div class="v-gallery-title">
+    <p class="p-3 mb-0 text-center">
+       First Ride Impressions
+    </p>
+</div>
+<div class="row p-3 mx-2 first-ride-slide">
+    <div class="col-md-12">
+        <div class="card" style="">
+        
+         <a href="https://www.youtube.com/embed/2f1YA0k-5zU" class="p-3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+        <img src="image/pulsar.webp" class="card-img-top" alt="...">
+        </a>
+       
+           
+            <div class="card-body">
+                <p style="font-size:20px; font-weight:700;">Yamaha R15M</p>
+                <p class="card-text" style="color:#616161">05 September 2023</p>
+
+                <div class="d-flex justify-content-between text-muted" style="font-size: 14px;">
+                    <div><i class="fas fa-eye" style="font-size:14px;"></i>&nbsp;Views: 35,288 &nbsp;</div>
+                    <div> <hr class="v-gallery-hr" />&nbsp;&nbsp;&nbsp;</div>
+                    <div>&nbsp; <i class="fas fa-thumbs-up" style="font-size:14px;"></i> Likes: 143</div>
+                </div>    
+            </div>
+
+           
+        </div>
+    </div>
+
+    <div class="col-md-12">
+        <div class="card" style="">
+             <a href="https://www.youtube.com/embed/2f1YA0k-5zU" class="p-3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+        <img src="image/pulsar.webp" class="card-img-top" alt="...">
+        </a>
+            <div class="card-body">
+                <p style="font-size:20px; font-weight:700;">Yamaha R15M</p>
+                <p class="card-text" style="color:#616161">05 September 2023</p>
+
+                <div class="d-flex justify-content-between text-muted" style="font-size: 14px;">
+                    <div class=""><i class="fas fa-eye" style="font-size:14px;"></i>&nbsp;Views: 35,288 &nbsp;</div>
+                   <div> <hr class="v-gallery-hr" />&nbsp;&nbsp;&nbsp;</div>
+                    <div class="">&nbsp; <i class="fas fa-thumbs-up" style="font-size:14px;"></i> Likes: 143</div>
+                </div>    
+            </div>
+
+           
+        </div>
+    </div>
+
+    <div class="col-md-12">
+        <div class="card" style="">
+             <a href="https://www.youtube.com/embed/2f1YA0k-5zU" class="p-3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+        <img src="image/pulsar.webp" class="card-img-top" alt="...">
+        </a>
+            <div class="card-body">
+                <p style="font-size:20px; font-weight:700;">Yamaha R15M</p>
+                <p class="card-text" style="color:#616161">05 September 2023</p>
+
+                <div class="d-flex justify-content-between text-muted" style="font-size: 14px;">
+                    <div class=""><i class="fas fa-eye" style="font-size:14px;"></i>&nbsp;Views: 35,288 &nbsp;</div>
+                   <div> <hr class="v-gallery-hr" />&nbsp;&nbsp;&nbsp;</div>
+                    <div class="">&nbsp; <i class="fas fa-thumbs-up" style="font-size:14px;"></i> Likes: 143</div>
+                </div>    
+            </div>
+
+           
+        </div>
+    </div>
+
+    <div class="col-md-12">
+        <div class="card" style="">
+             <a href="https://www.youtube.com/embed/2f1YA0k-5zU" class="p-3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+        <img src="image/pulsar.webp" class="card-img-top" alt="...">
+        </a>
+            <div class="card-body">
+                <p style="font-size:20px; font-weight:700;">Yamaha R15M</p>
+                <p class="card-text" style="color:#616161">05 September 2023</p>
+
+                <div class="d-flex justify-content-between text-muted" style="font-size: 14px;">
+                    <div class=""><i class="fas fa-eye" style="font-size:14px;"></i>&nbsp;Views: 35,288 &nbsp;</div>
+                   <div> <hr class="v-gallery-hr" />&nbsp;&nbsp;&nbsp;</div>
+                    <div class="">&nbsp; <i class="fas fa-thumbs-up" style="font-size:14px;"></i> Likes: 143</div>
+                </div>    
+            </div>
+
+           
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-md-12 mt-1 text-center">
+        <a href="" class="view-more-btn">
+            View more Videos <i class="fas">&#xf105;</i>
+        </a>
+    </div>
+</div>
+
+</div>
+<!--        First Ride  end-->
+
+
+
+<!-- Launch Alert Start -->
+<div class="product-contant mt-4 pt-2 pb-4" style="border: 1px solid #ddd">
+
+<div class="v-gallery-title">
+    <p class="p-3 mb-0 text-center">
+       Launch Alert
+    </p>
+</div>
+<div class="row p-3 mx-2 first-ride-slide">
+    <div class="col-md-12">
+        <div class="card" style="">
+             <a href="https://www.youtube.com/embed/2f1YA0k-5zU" class="p-3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+        <img src="image/pulsar.webp" class="card-img-top" alt="...">
+        </a>
+            <div class="card-body">
+                <p style="font-size:20px; font-weight:700;">Yamaha R15M</p>
+                <p class="card-text" style="color:#616161">05 September 2023</p>
+
+                <div class="d-flex justify-content-between text-muted" style="font-size: 14px;">
+                    <div class=""><i class="fas fa-eye" style="font-size:14px;"></i>&nbsp;Views: 35,288 &nbsp;</div>
+                   <div> <hr class="v-gallery-hr" />&nbsp;&nbsp;&nbsp;</div>
+                    <div class="">&nbsp; <i class="fas fa-thumbs-up" style="font-size:14px;"></i> Likes: 143</div>
+                </div>    
+            </div>
+
+           
+        </div>
+    </div>
+
+    <div class="col-md-12">
+        <div class="card" style="">
+             <a href="https://www.youtube.com/embed/2f1YA0k-5zU" class="p-3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+        <img src="image/pulsar.webp" class="card-img-top" alt="...">
+        </a>
+            <div class="card-body">
+                <p style="font-size:20px; font-weight:700;">Yamaha R15M</p>
+                <p class="card-text" style="color:#616161">05 September 2023</p>
+
+                <div class="d-flex justify-content-between text-muted" style="font-size: 14px;">
+                    <div class=""><i class="fas fa-eye" style="font-size:14px;"></i>&nbsp;Views: 35,288 &nbsp;</div>
+                   <div> <hr class="v-gallery-hr" />&nbsp;&nbsp;&nbsp;</div>
+                    <div class="">&nbsp; <i class="fas fa-thumbs-up" style="font-size:14px;"></i> Likes: 143</div>
+                </div>    
+            </div>
+
+           
+        </div>
+    </div>
+
+    <div class="col-md-12">
+        <div class="card" style="">
+             <a href="https://www.youtube.com/embed/2f1YA0k-5zU" class="p-3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+        <img src="image/pulsar.webp" class="card-img-top" alt="...">
+        </a>
+            <div class="card-body">
+                <p style="font-size:20px; font-weight:700;">Yamaha R15M</p>
+                <p class="card-text" style="color:#616161">05 September 2023</p>
+
+                <div class="d-flex justify-content-between text-muted" style="font-size: 14px;">
+                    <div class=""><i class="fas fa-eye" style="font-size:14px;"></i>&nbsp;Views: 35,288 &nbsp;</div>
+                   <div> <hr class="v-gallery-hr" />&nbsp;&nbsp;&nbsp;</div>
+                    <div class="">&nbsp; <i class="fas fa-thumbs-up" style="font-size:14px;"></i> Likes: 143</div>
+                </div>    
+            </div>
+
+           
+        </div>
+    </div>
+
+    <div class="col-md-12">
+        <div class="card" style="">
+             <a href="https://www.youtube.com/embed/2f1YA0k-5zU" class="p-3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+        <img src="image/pulsar.webp" class="card-img-top" alt="...">
+        </a>
+            <div class="card-body">
+                <p style="font-size:20px; font-weight:700;">Yamaha R15M</p>
+                <p class="card-text" style="color:#616161">05 September 2023</p>
+
+                <div class="d-flex justify-content-between text-muted" style="font-size: 14px;">
+                    <div class=""><i class="fas fa-eye" style="font-size:14px;"></i>&nbsp;Views: 35,288 &nbsp;</div>
+                   <div> <hr class="v-gallery-hr" />&nbsp;&nbsp;&nbsp;</div>
+                    <div class="">&nbsp; <i class="fas fa-thumbs-up" style="font-size:14px;"></i> Likes: 143</div>
+                </div>    
+            </div>
+
+           
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-md-12 mt-1 text-center">
+        <a href="" class="view-more-btn">
+            View more Videos <i class="fas">&#xf105;</i>
+        </a>
+    </div>
+</div>
+
+</div>
+<!--        Launch Alert end-->
+
+
+
+
+
+
+<!-- First Look Start -->
+
+<div class="product-contant mt-4 pt-2 pb-4" style="border: 1px solid #ddd">
+
+<div class="v-gallery-title">
+    <p class="p-3 mb-0 text-center">
+       First Look
+    </p>
+</div>
+<div class="row p-3 mx-2 first-ride-slide">
+    <div class="col-md-12">
+        <div class="card" style="">
+             <a href="https://www.youtube.com/embed/2f1YA0k-5zU" class="p-3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+        <img src="image/pulsar.webp" class="card-img-top" alt="...">
+        </a>
+            <div class="card-body">
+                <p style="font-size:20px; font-weight:700;">Yamaha R15M</p>
+                <p class="card-text" style="color:#616161">05 September 2023</p>
+
+                <div class="d-flex justify-content-between text-muted" style="font-size: 14px;">
+                    <div class=""><i class="fas fa-eye" style="font-size:14px;"></i>&nbsp;Views: 35,288 &nbsp;</div>
+                   <div> <hr class="v-gallery-hr" />&nbsp;&nbsp;&nbsp;</div>
+                    <div class="">&nbsp; <i class="fas fa-thumbs-up" style="font-size:14px;"></i> Likes: 143</div>
+                </div>    
+            </div>
+
+           
+        </div>
+    </div>
+
+    <div class="col-md-12">
+        <div class="card" style="">
+             <a href="https://www.youtube.com/embed/2f1YA0k-5zU" class="p-3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+        <img src="image/pulsar.webp" class="card-img-top" alt="...">
+        </a>
+            <div class="card-body">
+                <p style="font-size:20px; font-weight:700;">Yamaha R15M</p>
+                <p class="card-text" style="color:#616161">05 September 2023</p>
+
+                <div class="d-flex justify-content-between text-muted" style="font-size: 14px;">
+                    <div class=""><i class="fas fa-eye" style="font-size:14px;"></i>&nbsp;Views: 35,288 &nbsp;</div>
+                   <div> <hr class="v-gallery-hr" />&nbsp;&nbsp;&nbsp;</div>
+                    <div class="">&nbsp; <i class="fas fa-thumbs-up" style="font-size:14px;"></i> Likes: 143</div>
+                </div>    
+            </div>
+
+           
+        </div>
+    </div>
+
+    <div class="col-md-12">
+        <div class="card" style="">
+             <a href="https://www.youtube.com/embed/2f1YA0k-5zU" class="p-3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+        <img src="image/pulsar.webp" class="card-img-top" alt="...">
+        </a>
+            <div class="card-body">
+                <p style="font-size:20px; font-weight:700;">Yamaha R15M</p>
+                <p class="card-text" style="color:#616161">05 September 2023</p>
+
+                <div class="d-flex justify-content-between text-muted" style="font-size: 14px;">
+                    <div class=""><i class="fas fa-eye" style="font-size:14px;"></i>&nbsp;Views: 35,288 &nbsp;</div>
+                   <div> <hr class="v-gallery-hr" />&nbsp;&nbsp;&nbsp;</div>
+                    <div class="">&nbsp; <i class="fas fa-thumbs-up" style="font-size:14px;"></i> Likes: 143</div>
+                </div>    
+            </div>
+
+           
+        </div>
+    </div>
+
+    <div class="col-md-12">
+        <div class="card" style="">
+             <a href="https://www.youtube.com/embed/2f1YA0k-5zU" class="p-3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+        <img src="image/pulsar.webp" class="card-img-top" alt="...">
+        </a>
+            <div class="card-body">
+                <p style="font-size:20px; font-weight:700;">Yamaha R15M</p>
+                <p class="card-text" style="color:#616161">05 September 2023</p>
+
+                <div class="d-flex justify-content-between text-muted" style="font-size: 14px;">
+                    <div class=""><i class="fas fa-eye" style="font-size:14px;"></i>&nbsp;Views: 35,288 &nbsp;</div>
+                   <div> <hr class="v-gallery-hr" />&nbsp;&nbsp;&nbsp;</div>
+                    <div class="">&nbsp; <i class="fas fa-thumbs-up" style="font-size:14px;"></i> Likes: 143</div>
+                </div>    
+            </div>
+
+           
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-md-12 mt-1 text-center">
+        <a href="" class="view-more-btn">
+            View more Videos <i class="fas">&#xf105;</i>
+        </a>
+    </div>
+</div>
+
+</div>
+<!-- First Look End -->
+
+
+
+
+<!-- Bike Images Start -->
+<div class="product-contant mt-4 pt-2 pb-4" style="border: 1px solid #ddd">
+
+<div class="v-gallery-title">
+    <p class="p-3 mb-0 text-center">
+      Browse Videos By Brands
+    </p>
+</div>
+<div class="row p-3 mx-2 ">
+    <div class="col-md-12">
+        <div class="card" style="">
+             
+            <div class="card-body">
+                <div class="row brand-logo pt-4 px-1 pb-4">
+                    <div class="col-lg-2 col-md-2 col-sm-2">
+                        <img src="image/brand-logo.png" alt="">
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2">
+                        <img src="image/honda.png" alt="">
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2">
+                        <img src="image/suzuki.png" alt="">
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2">
+                        <img src="image/div-logo.png" alt="">
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2">
+                        <img src="image/others.png" alt="">
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2">
+                        <img src="image/electric.png" alt="">
+                    </div>
+                   
+                </div>  
+                
+                <div class="row brand-logo pt-4 px-1 pb-4">
+                    <div class="col-lg-2 col-md-2 col-sm-2">
+                        <img src="image/service.png" alt="">
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2">
+                        <img src="image/scooter.png" alt="">
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2">
+                        <img src="image/sports-bike.png" alt="">
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2">
+                        <img src="image/expertpick.png" alt="">
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2">
+                        <img src="image/suzuki.png" alt="">
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2">
+                        <img src="image/div-logo.png" alt="">
+                    </div>
+                   
+                </div>   
+            </div>
+
+           
+        </div>
+    </div>
+
+
+</div>
+
+<div class="row">
+    <div class="col-md-12 mt-1 text-center">
+        <a href="" class="view-more-btn">
+            View more brands <i class="fas">&#xf105;</i>
+        </a>
+    </div>
+</div>
+
+</div>
+<!--        Launch Alert end-->
+
+
+
+        
+
+
+
+<!-- Bike Images Start -->
+<div class="product-contant mt-4 pt-2 pb-4" style="border: 1px solid #ddd">
+
+<div class="v-gallery-title">
+    <p class="p-3 mb-0 text-center">
+      Bike Images
+    </p>
+</div>
+<div class="row p-3 mx-2 bike-images-slide">
+    <div class="col-md-12">
+        <div class="card" style="">
+             <a href="https://www.youtube.com/embed/2f1YA0k-5zU" class="p-3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+        <img src="image/pulsar.webp" class="card-img-top" alt="...">
+        </a>
+            <div class="card-body">
+                
+                <div class="d-flex justify-content-between text-muted" style="font-size: 14px;">
+                    <div class="">Royal Enfield<br><b>Classic 350</b></div>
+                   
+                    <div class=""><b><i class="fas fa-image" style="font-size:14px;"></i></b> 143</div>
+                </div>    
+            </div>
+
+           
+        </div>
+    </div>
+
+    <div class="col-md-12">
+        <div class="card" style="">
+             <a href="https://www.youtube.com/embed/2f1YA0k-5zU" class="p-3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+        <img src="image/pulsar.webp" class="card-img-top" alt="...">
+        </a>
+            <div class="card-body">
+                
+                <div class="d-flex justify-content-between text-muted" style="font-size: 14px;">
+                    <div class="">Royal Enfield<br><b>Classic 350</b></div>
+                   
+                    <div class=""><b><i class="fas fa-image" style="font-size:14px;"></i></b> 143</div>
+                </div>    
+            </div>
+
+           
+        </div>
+    </div>
+
+    <div class="col-md-12">
+        <div class="card" style="">
+             <a href="https://www.youtube.com/embed/2f1YA0k-5zU" class="p-3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+        <img src="image/pulsar.webp" class="card-img-top" alt="...">
+        </a>
+            <div class="card-body">
+                
+                <div class="d-flex justify-content-between text-muted" style="font-size: 14px;">
+                    <div class="">Royal Enfield<br><b>Classic 350</b></div>
+                   
+                    <div class=""><b><i class="fas fa-image" style="font-size:14px;"></i></b> 143</div>
+                </div>    
+            </div>
+
+           
+        </div>
+    </div>
+
+    <div class="col-md-12">
+        <div class="card" style="">
+             <a href="https://www.youtube.com/embed/2f1YA0k-5zU" class="p-3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+        <img src="image/pulsar.webp" class="card-img-top" alt="...">
+        </a>
+            <div class="card-body">
+                
+                <div class="d-flex justify-content-between text-muted" style="font-size: 14px;">
+                    <div class="">Royal Enfield<br><b>Classic 350</b></div>
+                   
+                    <div class=""><b><i class="fas fa-image" style="font-size:14px;"></i></b> 143</div>
+                </div>    
+            </div>
+
+           
+        </div>
+    </div>
+
+   
+</div>
+
+<div class="row">
+    <div class="col-md-12 mt-1 text-center">
+        <a href="" class="view-more-btn">
+            View more Videos <i class="fas">&#xf105;</i>
+        </a>
+    </div>
+</div>
+
+</div>
+<!--        Bike Images end-->
+
+
+     
+
+    </div>
+
 </section>
+
+
+
+
+
+
+
+
 
 
 <?php 
