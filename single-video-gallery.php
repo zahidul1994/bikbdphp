@@ -41,6 +41,76 @@ require "header.php"
         background-color: transparent;
         color: red !important;
     }
+
+
+    @media (max-width: 500px) {
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .single-video-details {
+            display: block;
+            text-align: center;
+        }
+        .single-video-details .right-separator {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .single-video-details .btn {
+            display: block;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .mayoffer-left,
+        .mayoffer-right {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .mayoffer-left img {
+            width: 80px;
+            height: auto;
+            margin-right: 10px;
+        }
+        .article-bottom {
+            justify-content: center;
+        }
+        .mayoffer-right .article,
+        .mayoffer-right .get-me,.article a {
+            text-align: center;
+            display: block;
+        }
+
+        .mayoffer-right {
+            flex-direction: column; /* Stack items vertically */
+            align-items: flex-start; /* Align items to the start */
+            padding-top: 10px; /* Adjust top padding */
+            padding-bottom: 10px; /* Adjust bottom padding */
+        }
+        .article {
+            margin-bottom: 10px; /* Add margin below the article */
+        }
+        .get-me {
+            margin-top: 5px; /* Add margin above the button */
+        }
+        .view-more-btn {
+            width: 100%; /* Make button full width */
+            text-align: center; /* Center align text */
+        }
+        .article p{
+            margin-bottom: 0.3rem;
+        }
+        
+    }
 </style>
 
 
@@ -57,20 +127,22 @@ require "header.php"
                     <div class="single-video">
                         <h3 class="product-header mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero!</h3>
                         <!-- <h3 class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quas!</h3> -->
+                        <div class="video-container">
                         <iframe width="1000" style="width: 100%;" height="415" src="https://www.youtube.com/embed/EYts5oh6ZA8?si=itR4IRITj5Bc19M5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
-                         web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
                     </div>
                     <div class="single-video-bottom mt-2 mb-2">
                         <h4 style="color:#616161;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, atque?</>
                             <div class="row">
-                                <div class="col-md-10 col-sm-10">
+                                <div class="col-md-10 col-sm-6" style="font-size: 15px;">
                                     <div class="single-video-details d-flex  align-items-center justify-content-start mt-2">
                                         <div class="right-separator"><i class="fas fa-eye" style="font-size:14px;color:#616161"></i>&nbsp; 35,288 &nbsp;</div>
                                         <div class="right-separator">&nbsp; <i class="fas fa-thumbs-up" style="font-size:14px;color:#616161"></i> Likes: 143</div>&nbsp;&nbsp;
                                         <div class="btn btn-sm btn-danger"><i class="fab fa-youtube" style="color:#fff !important;"></i> &nbsp;<a href="" style="color:#fff;">Youtube</a></div>
                                     </div>
                                 </div>
-                                <div class="col-md-2 col-sm-2 d-flex align-items-center ">
+                                <div class="col-md-2 col-sm-6 d-flex align-items-center ">
                                     <p style="font-size:14px;color:#616161">05 May 2023</p>
                                 </div>
                             </div>
@@ -105,7 +177,7 @@ require "header.php"
                                         <p style="font-size:17px;color:#616161;font-weight:600">Lorem ipsum dolor sit.</p>
                                         <p><b>Tk: 550000</b></p>
                                     </div>
-                                    <div class="get-me">
+                                    <div class="get-me pb-2">
                                         <a class="view-more-btn btn-danger" href="" style="font-weight:700;">Get May Offer</a>
                                     </div>
                                 </div>
